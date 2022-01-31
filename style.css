@@ -43,7 +43,7 @@ body {
   max-width: 600px;
   position: relative;
   top: 64%;
-  width: 30vw;
+  width: 500px;
 }
 
 .uploader label {
@@ -194,7 +194,7 @@ body {
     width: 283px;
     height: 130px;
     margin: -65px auto 0 auto;
-    margin-top: 17%;
+    margin-top: 16%;
     margin-bottom: 0px;
     zoom:0.3;
   }
@@ -377,7 +377,8 @@ body {
 
   .masktoon{
     width:400px;
-    margin-top: 50px;
+    margin-top: 70px;
+    border: 5px solid rgb(172, 172, 172);
 
   }
 
@@ -448,6 +449,8 @@ body {
   .gender-giude {
     font-family:  'Jua', sans-serif;
     text-align: center;
+    margin-top: 1%;
+    font-size: 15px;
   }
 
   .vl {
@@ -458,3 +461,71 @@ body {
     left: 50%;
     margin-left: -3px;
   }
+
+  .topname{
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+  }
+  .donot{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .two_order{
+    font-size: 15px;
+    color:black;
+  }
+
+  .third_order{
+    font-size: 15px;
+    color:black;
+  }
+
+  .result-message{
+    font-size: 15px;
+    font-weight: bold;
+    color:gray;
+  }
+
+  .developer{
+    
+    margin-left: 50px;
+
+  }
+
+  .result-message2{
+    font-size: 20px;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+.counter {
+  box-sizing: border-box;
+	background-color: #192a56;
+	color: #fff;
+	font-family: 'Muli', sans-serif;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20vh;
+	margin: 0;
+  margin-bottom: 20px;
+}
+
+.counter_h {
+	font-size: 50px;
+	margin: 0;
+}
+
+.counter_p {
+	color: rgba(255, 255, 255, 0.8);
+	letter-spacing: 2px;
+	margin: 0;
+}
