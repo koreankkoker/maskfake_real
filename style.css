@@ -1,0 +1,460 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+/* * {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+html,
+body {
+  height: 100%;
+  text-align: center;
+}
+
+body {
+  padding: 2rem;
+  background: #f8f8f8;
+} */
+
+/* h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  line-height: 1;
+  color: #454cad;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #5f6982;
+} */
+
+body {
+  font-family: 'Jua', sans-serif;
+  background-color: #ffffff;
+}
+
+.uploader {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  top: 64%;
+  width: 30vw;
+}
+
+.uploader label {
+  float: left;
+  clear: both;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: #fff;
+  border-radius: 7px;
+  border: 3px solid #eee;
+  transition: all 0.2s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.uploader label:hover {
+  border-color: #454cad;
+}
+.uploader label.hover {
+  border: 3px solid #454cad;
+  box-shadow: inset 0 0 0 6px #eee;
+}
+.uploader label.hover #start i.fa {
+  transform: scale(0.8);
+  opacity: 0.3;
+}
+.uploader #start {
+  float: left;
+  clear: both;
+  width: 100%;
+  cursor: pointer;
+}
+.uploader #start.hidden {
+  display: none;
+}
+.uploader #start i.fa {
+  font-size: 50px;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+.uploader #response {
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #response.hidden {
+  display: none;
+}
+.uploader #response #messages {
+  margin-bottom: 0.5rem;
+}
+.uploader #file-image {
+  display: inline;
+  margin: 0 auto 0.5rem auto;
+  width: auto;
+  height: auto;
+  max-width: 180px;
+}
+.uploader #file-image.hidden {
+  display: none;
+}
+.uploader #notimage {
+  display: block;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+.uploader #notimage.hidden {
+  display: none;
+}
+.uploader progress,
+.uploader .progress {
+  display: inline;
+  clear: both;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 180px;
+  height: 8px;
+  border: 0;
+  border-radius: 4px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.uploader .progress[value]::-webkit-progress-bar {
+  border-radius: 4px;
+  background-color: #eee;
+}
+.uploader .progress[value]::-webkit-progress-value {
+  background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+  border-radius: 4px;
+}
+.uploader .progress[value]::-moz-progress-bar {
+  background: linear-gradient(to right, #393f90 0%, #454cad 50%);
+  border-radius: 4px;
+}
+.uploader input[type=file] {
+  display: none;
+}
+.uploader div {
+  margin: 0 0 0.5rem 0;
+  color: #5f6982;
+}
+.uploader .btn {
+  display: inline-block;
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
+  clear: both;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: initial;
+  border: none;
+  border-radius: 0.2rem;
+  outline: none;
+  padding: 0 1rem;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  background: #454cad;
+  border-color: #454cad;
+  cursor: pointer;
+}
+
+/* * {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+  } */
+  
+  #app-cover {
+    position: relative;
+    top: 60%;
+    right: 0;
+    left: 0;
+    width: 283px;
+    height: 130px;
+    margin: -65px auto 0 auto;
+    margin-top: 17%;
+    margin-bottom: 0px;
+    zoom:0.3;
+  }
+  
+  #checkbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+  }
+  
+  #path {
+    width: 261px;
+    height: 127px;
+    padding: 20px;
+    background-color: #f1f3f8;
+    border-radius: 100px;
+  }
+  
+  #knob {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px #dae4ff;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+    z-index: 1;
+  }
+  
+  #bow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -17px;
+    width: 30px;
+    margin: 0 auto;
+    transition: 0.2s ease color;
+  }
+  
+  #bow i {
+    display: block;
+    font-size: 34px;
+    line-height: 1;
+  }
+  
+  #gender {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 80px;
+    font-size: 30px;
+    font-family: Roboto, Helvetica;
+    text-align: right;
+    line-height: 1;
+    margin-top: -15px;
+    font-weight: bold;
+  }
+  
+  #fe {
+    position: absolute;
+    left: -115px;
+    color: #e91e63;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+  }
+  
+  #male {
+    left: 0;
+  }
+  
+  #male,
+  #male span {
+    position: relative;
+  }
+  
+  #bow,
+  #male span {
+    color: #7aa0ff;
+  }
+  
+  #male span {
+    z-index: 1;
+  }
+  
+  #male:before {
+    content: "MALE";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    color: #e91e63;
+    white-space: pre;
+    overflow: hidden;
+    transition: 0.2s cubic-bezier(0.4, 0, 1, 1) all;
+    z-index: 2;
+  }
+  
+  #path.fe {
+    background-color: #f8f1f7;
+  }
+  
+  #checkbox:checked ~ #knob {
+    transform: rotateZ(-135deg);
+    box-shadow: 0 0 6px #ffe2fe;
+  }
+  
+  #knob #bow.fe {
+    color: #e91e63;
+  }
+  
+  #checkbox:checked ~ #gender #fe {
+    left: -34px;
+  }
+  
+  #male.fe:before {
+    width: 100%;
+  }
+  
+  #checkbox:checked ~ #gender #male {
+    animation: move 0.2s ease 0.4s;
+  }
+  
+  #male.ma {
+    animation: move_l 0.2s ease 0.1s;
+  }
+  
+  @keyframes move {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 5px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+  
+  @keyframes move_l {
+    0% {
+      left: 0;
+    }
+    50% {
+      left: 5px;
+    }
+    100% {
+      left: 0;
+    }
+  }
+
+  .title {
+    margin-top: 5%;
+    font-family:  'Jua', sans-serif;
+    text-align: center;
+
+  }
+
+  .subtitle{
+    font-family:  'Jua', sans-serif;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 15px;
+  
+  }
+
+  @media screen and (max-width: 600px) {
+    html {
+      font-size: 10px;
+    }
+  }
+
+  .masktoon{
+    width:400px;
+    margin-top: 50px;
+
+  }
+
+  .bar-container {
+    height: 2.7rem;
+  }
+
+  .존예-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(117, 204, 84, 0.2);
+  }
+  .존예-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(117, 204, 84, 1);
+  }
+
+  .존잘-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(117, 204, 84, 0.2);
+  }
+
+  .존잘-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(117, 204, 84, 1);
+  }
+
+  .마기꾼-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgba(27, 175, 234, 0.2);
+  }
+  .마기꾼-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: rgba(27, 175, 234, 1);
+  }
+
+  .percent-text {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  .gender-giude {
+    font-family:  'Jua', sans-serif;
+    text-align: center;
+  }
+
+  .vl {
+    margin-top: 2%;
+    border-left: 2.5px solid black;
+    height: 10vw;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+  }
