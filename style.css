@@ -5,7 +5,7 @@
   font-size: 16px;
 }
 
-html,
+
 body {
   height: 100%;
   text-align: center;
@@ -32,7 +32,7 @@ p {
 
 body {
   font-family: 'Jua', sans-serif;
-  background-color: #ffffff;
+  background-color: #ffffffd7;
 }
 
 .uploader {
@@ -43,7 +43,7 @@ body {
   max-width: 600px;
   position: relative;
   top: 64%;
-  width: 500px;
+  margin-top: 5%;
 }
 
 .uploader label {
@@ -356,8 +356,10 @@ body {
 
   .title {
     margin-top: 5%;
+    margin-bottom: 5%;
     font-family:  'Jua', sans-serif;
     text-align: center;
+    font-size: 250%;
 
   }
 
@@ -365,7 +367,8 @@ body {
     font-family:  'Jua', sans-serif;
     text-align: center;
     margin-top: 2%;
-    font-size: 15px;
+    font-size:110%;
+    color:gray;
   
   }
 
@@ -376,9 +379,10 @@ body {
   }
 
   .masktoon{
-    width:400px;
+    width:60%;
     margin-top: 70px;
-    border: 5px solid rgb(172, 172, 172);
+    border: 8px solid rgb(0, 0, 0);
+    border-radius: 9px;
 
   }
 
@@ -450,12 +454,12 @@ body {
     font-family:  'Jua', sans-serif;
     text-align: center;
     margin-top: 1%;
-    font-size: 15px;
+    font-size: 170%;;
   }
 
   .vl {
     margin-top: 2%;
-    border-left: 2.5px solid black;
+    border-left: 2.5px solid rgb(112, 112, 112);
     height: 10vw;
     position: absolute;
     left: 50%;
@@ -463,9 +467,10 @@ body {
   }
 
   .topname{
+    text-decoration-line : none;
     position: absolute;
     color: black;
-    font-size: 20px;
+    font-size: 130%;
     margin-top: 20px;
     margin-left: 30px;
 
@@ -473,16 +478,16 @@ body {
   .donot{
     text-align: center;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 130%;
   }
 
   .two_order{
-    font-size: 15px;
+    font-size: 170%;
     color:black;
   }
 
   .third_order{
-    font-size: 15px;
+    font-size: 170%;
     color:black;
   }
 
@@ -528,4 +533,24 @@ body {
 	color: rgba(255, 255, 255, 0.8);
 	letter-spacing: 2px;
 	margin: 0;
+}
+
+.half_background {
+  background: linear-gradient(to top, #74a7eb 35%, transparent 20%);
+  opacity:0.8;
+}
+
+.mask_img{
+  width:10%;
+}
+
+.title_box{
+  text-align: center;
+  
+    margin-top: 5%;
+
+}
+
+.ment{
+  margin-left: 50px
 }

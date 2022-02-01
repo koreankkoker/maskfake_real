@@ -28,6 +28,9 @@
     src="https://platform-api.sharethis.com/js/sharethis.js#property=61f7c44d9343fb0019ed0c1d&product=inline-share-buttons"
     async="async"></script>
 
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -46,10 +49,16 @@
 
 
   <section>
+    <div class="title_box">
+      <img class=mask_img src="https://i.imgur.com/PZFM6P6.png" alt="Mask Image"
+        style="vertical-align:middle;">
+      <span class="title">＜마기꾼 테스트＞<span>
+          <img class=mask_img src="https://i.imgur.com/PZFM6P6.png" alt="Mask Image"
+            style="vertical-align:middle;">
+    </div>
 
-    <h1 class="title">마기꾼 테스트</h1>
     <h2 class="subtitle">인공지능(AI)이 마기꾼인지 판단하고 <br> 마스크로 가려진 얼굴을 예측합니다. </h2>
-    <h2 class="donot"> 더 이상 속지 말아요!</h2>
+    <h2 class="donot">더 이상 속지 말아요!</h2>
 
     <div class="vl"></div>
 
@@ -71,7 +80,7 @@
   </div>
 
   <section>
-    <p class="gender-giude">1. 성별을 선택하세요</p>
+    <p class="gender-giude"><span class="half_background">1. 성별을 선택하세요</span></p>
 
   </section>
 
@@ -86,7 +95,8 @@
         <img id="file-image" src="#" alt="Preview" class="hidden">
         <div id="start">
           <i class="fa fa-download" aria-hidden="true"></i>
-          <div class="two_order">2. 사진을 업로드 하세요!<br>(눈이 제대로 나온 정면사진일수록 정확도가 높습니다)</div>
+          <div class="two_order"><span class="half_background">2. 사진을 업로드 하세요!</span><br>(눈이 제대로 나온 정면사진일수록 정확도가 높습니다)
+          </div>
           <div id="notimage" class="hidden">Please select an image</div>
         </div>
         <div id="response" class="hidden">
@@ -110,7 +120,7 @@
 
 
       </label>
-      <div class="third_order">3.결과를 공유하세요!</div>
+      <div class="third_order"><span class="half_background">3.결과를 공유하세요!</span></div>
 
       <div class="sharethis-inline-share-buttons" style='margin-bottom: 30%;'></div>
     </form>
@@ -123,6 +133,7 @@
 
 
     <p class="developer">개발자 이메일 | s5834@naver.com </p>
+    <p class="ment">코로나로 모두가 힘들고 답답하겠지만 마스크 잘쓰고 다녀요! <br> 이제는 마스크 없이 살 수 없는 얼굴이 되어버린걸요! <br><br> *사진은 어디에도 저장되지 않습니다.*</p>
 
 
 
@@ -205,16 +216,16 @@
         resultMessege = "당신은 상위 5%의 외모입니다. <br> 외모가 마스크를 그냥 뚫고 나옵니다. <br> 여자분이면 개발자에게 연락바랍니다."
       }
       else if (rpercent >= 90) {
-        resultMessege = "당신은 상위 10%의 외모입니다. <br> 이러한 눈과 두상을 가진 당신은 하관이 못생겼을리가 없습니다. 마스크를 쓰고 다니는 건 전 우주적 손해이니 투명마스크를 끼고 다니세요."
+        resultMessege = "당신은 상위 10%의 외모입니다. <br> 이러한 눈과 두상을 가진 당신은 하관이 못생겼을리가 없습니다. <br>마스크를 쓰고 다니는 건 전 우주적 손해이니 <br>투명마스크를 끼고 다니세요."
       }
       else if (rpercent >= 80) {
-        resultMessege = "당신은 상위 20%의 외모입니다. <br> 어딜가나 당신을 좋아하는 학생들이 한 명씩은 있습니다. 밥 먹을때는 자신있게 마스크를 벗으셔도 됩니다."
+        resultMessege = "당신은 상위 20%의 외모입니다. <br> 어딜가나 당신을 좋아하는 학생들이 한 명씩은 있습니다. <br>밥 먹을때는 자신있게 마스크를 벗으셔도 됩니다."
       }
       else if (30 >= rpercent && rpercent > 20) {
         resultMessege = "당신은 마기꾼 초범입니다. <br> 좋아하는 사람 앞에서는 마스크를 어떻게든 벗지 마세요."
       }
       else if (rpercent <= 20 && rpercent > 5) {
-        resultMessege = "당신은 무기징역 마기꾼입니다. <br> 더 이상 사람들을 속이지 말고 마스크 보다는 방독면을 착용하고 다니세요."
+        resultMessege = "당신은 무기징역 마기꾼입니다. <br> 더 이상 사람들을 속이지 말고 마스크 보다는 <br>방독면을 착용하고 다니세요."
       }
       else if (rpercent <= 5) {
         resultMessege = "말아낌. <br> 화이팅."
@@ -458,6 +469,8 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  -->
+
+<!-- href="https://www.flaticon.com/kr/free-icons/" title="마스크 아이콘">마스크 아이콘  제작자: mangsaabguru - Flaticon -->
 
 
 
