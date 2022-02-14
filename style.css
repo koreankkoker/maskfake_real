@@ -560,3 +560,8 @@ body {
   width: 320px;
   margin:0 auto;
 }
+
+#disqus_thread{
+  margin-top: 40%;
+  margin-bottom: 20%;
+}
